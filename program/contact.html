@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Section */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(68, 68, 68, 0.15);
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: textMovement 3s ease-in-out infinite;
+    opacity: 0;
+    animation-delay: 1s;
+  }
+  
+  header nav {
+    display: flex;
+  }
+  
+  header nav ul {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    margin: 0 15px;
+    list-style: none;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul:hover {
+    color: #2980b9;
+  }
+  
+  header .phone {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .phone img {
+    width: 20px;
+    margin-right: 5px;
+  }
+  
+
+  
+  @keyframes textMovement {
+    0%, 100% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(20px);
+        opacity: 1;
+    }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+  
+    .achievements-content {
+        padding: 25px;
+    }
+  
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .stat-item {
+        width: 80%;
+        margin: 10px 0;
+    }
+  }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        /* Google Map Section */
+        .map-section {
+            margin-bottom: 40px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Flexbox layout for Contact Info and Form */
+        .contact-section {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        /* Contact Info and Form Both with Same Size */
+        .contact-info,
+        .contact-form {
+            padding-top: 20px;
+            width: 48%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3,
+        .contact-form h2 {
+            color: #007bff;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Info Content */
+        .contact-info p {
+            font-size: 14px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Contact Info Images */
+        .contact-info img {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Contact Form Fields */
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #007bff;
+            outline: none;
+            background: #eef6ff;
+        }
+
+        .form-group textarea {
+            height: 60px;
+        }
+
+        .form-group button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 200px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Contact Info styling */
+        .contact-info p {
+            color: #555;
+        }
+
+        /* Contact Form Layout (Two Fields in One Row) */
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        /* Name Fields in Same Row */
+        .name-fields {
+            display: flex;
+            gap: 5px;
+        }
+
+        .name-fields input {
+            flex: 1;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kit.Kit Groups</h1>
+        <nav>
+            <ul>
+              <li><a href="practice.html">Home</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="ourteam.html">Our Team</a></li>
+              <li><a href="training.html">Training</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </nav>
+        <div class="phone">
+            <img src="https://cdn-icons-png.flaticon.com/128/9946/9946341.png" alt="Phone Icon">
+            <span>+92 3232336213</span>
+        </div>
+    </header>
+            <!-- Contact Information and Contact Form Section -->
+        <div class="contact-section">
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><img src="https://cdn-icons-png.flaticon.com/128/542/542689.png" alt="Email Icon"><strong>Email: </strong> headoffice@kitkit.com</p>
+                <p><img src="https://cdn-icons-png.flaticon.com/128/597/597177.png" alt="Phone Icon"><strong>Phone: </strong> +92 3232336213</p>
+                <p><img src="https://cdn-icons-png.flaticon.com/128/484/484167.png" alt="Country Icon"><strong>Location: </strong> Karachi, Sindh, Pakistan</p>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="submit_form.php" method="POST">
+                    <!-- Name Fields in Same Row -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                        </div>
+                    </div>
+
+                    <!-- Email and Phone Fields -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="text" id="phone" name="phone" placeholder="Phone" required>
+                        </div>
+                    </div>
+
+                    <!-- Address and Position Fields -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" placeholder="Your Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="position">Position</label>
+                            <select id="position" name="position" required>
+                                <option value="Select-Option">Select-Option</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="College students">College students</option>
+                                <option value="Graduate">Graduate</option>
+                                <option value="Employee">Employee</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Message Field -->
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+<footer style="background-color: #52515128; color: #000000; padding: 40px 20px; text-align: center; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+        <!-- Footer Logo and Tagline -->
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px; text-align: left;">
+            <h2 style="margin-bottom: 10px; font-size: 24px; font-family: 'Montserrat', sans-serif;">Kit.Kit Groups</h2>
+            <p style="font-size: 14px; color: #180081; font">"A Digital Services Company"</p>
+        </div>
+  
+        <!-- Footer Links -->
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px; text-align: center;">
+            <h3 style="margin-bottom: 15px; font-size: 18px;">Quick Links</h3>
+            <div>
+                <a href="#home" style="color: #000000; margin: 0 10px; text-decoration: none; font-size: 14px;">Home</a>
+                <a href="#about" style="color: #000000; margin: 0 10px; text-decoration: none; font-size: 14px;">About Us</a>
+                <a href="#services" style="color: #000000; margin: 0 10px; text-decoration: none; font-size: 14px;">Services</a>
+                <a href="#contact" style="color: #000000; margin: 0 10px; text-decoration: none; font-size: 14px;">Contact</a>
+            </div>
+        </div>
+  
+        <!-- Social Media Links -->
+        <div style="flex: 1; min-width: 250px; margin-bottom: 20px; text-align: right;">
+            <h3 style="margin-bottom: 15px; font-size: 18px;">Follow Us</h3>
+            <div style="display: flex; justify-content: flex-end; gap: 10px;">
+                <a href="https://www.facebook.com/profile.php?id=61557957804567&mibextid=JRoKGi" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="Facebook" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://wa.link/mho3hm" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.instagram.com/un.known_486/profilecard/?igsh=cjVjZzVudmhmem1k" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Footer Bottom -->
+    <div style="border-top: 1px solid #444; margin-top: 20px; padding-top: 10px; font-size: 12px; color: #aaa;">
+        <p style="font-family: 'Montserrat', sans-serif;">&copy; 2024 Your Company Name. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

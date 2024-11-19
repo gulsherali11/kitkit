@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="training.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Kit.Kit Groups</h1>
+    <nav>
+        <ul>
+          <li><a href="practice.html">Home</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="ourteam.html">Our Team</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+    <div class="phone">
+      <img src="https://cdn-icons-png.flaticon.com/128/9946/9946341.png" alt="Phone Icon">
+      <span>+92 3232336213</span>
+    </div>
+  </header>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 1200px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .course-details {
+      flex: 1;
+      margin-right: 20px;
+    }
+    .course-details h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .course-details p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+    .course-details ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+    .course-details ul li {
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: #666;
+    }
+    .course-details .rating {
+      font-size: 16px;
+      color: #ff9900;
+      margin-top: 10px;
+    }
+    .course-video {
+      flex: 1;
+      text-align: center;
+    }
+    .course-video iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .buttons {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .buttons a {
+      text-decoration: none;
+      padding: 10px 15px;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .view-tutorial {
+      background-color: #4caf50;
+    }
+    .view-tutorial:hover {
+      background-color: #45a049;
+    }
+    .book-call {
+      background-color: #007bff;
+    }
+    .book-call:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Course Section -->
+  
+  <section class="container">
+    <!-- Left Side: Course Details -->
+    <div class="course-details">
+      <h2>Frontend Development</h2>
+      <p>Learn how to create modern and responsive websites using HTML, CSS, and JavaScript. This course covers everything from basic structures to advanced techniques for building stunning websites.</p>
+      <ul>
+        <li>HTML5, CSS3, and JavaScript</li>
+        <li>Responsive Design and Layouts</li>
+        <li>Modern UI/UX Principles</li>
+      </ul>
+      <div class="rating">
+        ⭐⭐⭐⭐⭐ (4.8/5 based on 120 reviews)
+      </div>
+      <div class="buttons">
+        <a href="https://www.youtube.com" class="view-tutorial" target="_blank">View Tutorial</a>
+        <a href="https://example.com/book-a-call" class="book-call" target="_blank">Book a Call</a>
+      </div>
+    </div>
+
+    <!-- Right Side: Video Tutorial -->
+    <div class="course-video">
+      <iframe 
+        src="https://www.youtube.com/embed/your-video-id" 
+        title="Frontend Development Tutorial"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  
+  <section class="course-info">
+    <div class="container">
+      <!-- Course Benefits Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Benefits</h3>
+        <div class="content">
+          <ul>
+            <li>Learn modern web development techniques</li>
+            <li>Gain a deep understanding of HTML, CSS, and JavaScript</li>
+            <li>Build projects that you can showcase in your portfolio</li>
+            <li>Responsive design skills for mobile-first websites</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Key Points Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Key Points</h3>
+        <div class="content">
+          <ul>
+            <li>Introduction to Web Development</li>
+            <li>Building your first website</li>
+            <li>Mastering CSS and JavaScript for dynamic websites</li>
+            <li>Advanced layout techniques and animations</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Course Duration Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Duration</h3>
+        <div class="content">
+          <p>8 weeks (3 hours per week)</p>
+        </div>
+      </div>
+  
+      <!-- Course Fee Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Fee</h3>
+        <div class="content">
+          <p>$200 (Discounted price available)</p>
+        </div>
+      </div>
+  
+      <!-- Instructor Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Instructor</h3>
+        <div class="content">
+          <p>Gulsher - Experienced Web Developer with 5+ years of experience in building high-quality websites and web applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    let lastClicked = null;
+  
+    function toggleContent(element) {
+      // If a section is already open, close it before opening a new one
+      if (lastClicked && lastClicked !== element) {
+        const lastContent = lastClicked.querySelector('.content');
+        lastContent.style.display = 'none';
+        lastClicked.classList.remove('active');
+      }
+  
+      // Toggle the content of the clicked section
+      const content = element.querySelector('.content');
+      const isOpen = content.style.display === 'block';
+  
+      // Close the section if it was already open, else open it
+      if (isOpen) {
+        content.style.display = 'none';
+        element.classList.remove('active');
+      } else {
+        content.style.display = 'block';
+        element.classList.add('active');
+      }
+  
+      // Update last clicked section
+      lastClicked = isOpen ? null : element;
+    }
+  </script>
+  
+  <style>
+    /* Hide content by default */
+    .content {
+      display: none;
+    }
+  
+    /* Add styles for active class (optional) */
+    .course-info-item.active h3 {
+      color: #007bff;
+    }
+  
+    .course-info-item.active .content {
+      display: block;
+    }
+  </style>
+
+<section class="container">
+    <!-- Left Side: Course Details -->
+    <div class="course-details">
+      <h2>Backend Development</h2>
+      <p>Master the skills needed to build powerful and secure server-side applications using technologies like Node.js, Python, and SQL. This course covers everything from API development to database management and server configuration.</p>
+      <ul>
+        <li>Node.js, Python, and PHP</li>
+        <li>Database Management (MySQL, MongoDB, PostgreSQL)</li>
+        <li>Building RESTful APIs</li>
+        <li>Security Best Practices</li>
+      </ul>
+      <div class="rating">
+        ⭐⭐⭐⭐⭐ (4.9/5 based on 150 reviews)
+      </div>
+      <div class="buttons">
+        <a href="https://www.youtube.com" class="view-tutorial" target="_blank">View Tutorial</a>
+        <a href="https://example.com/book-a-call" class="book-call" target="_blank">Book a Call</a>
+      </div>
+    </div>
+  
+    <!-- Right Side: Video Tutorial -->
+    <div class="course-video">
+      <iframe 
+        src="https://www.youtube.com/embed/your-video-id" 
+        title="Backend Development Tutorial"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <section class="course-info">
+    <div class="container">
+      <!-- Course Benefits Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Benefits</h3>
+        <div class="content">
+          <ul>
+            <li>High demand in the job market for backend developers.            </li>
+            <li>Gain expertise in database management and server-side programming.</li>
+            <li>Learn security best practices to protect applications and user data.</li>
+            <li>Open doors to high-paying jobs and career advancement opportunities.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Key Points Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Key Points</h3>
+        <div class="content">
+          <ul>
+            <li>Server-side Logic: Learn backend programming with languages like Node.js and Python.</li>
+            <li>Database Handling: Master SQL/NoSQL databases for data management.</li>
+            <li>API Creation: Develop APIs to connect and support apps.</li>
+            <li>Security & Optimization: Implement security practices and optimize performance.            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Course Duration Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Duration</h3>
+        <div class="content">
+          <p>12 weeks (4 hours per week)</p>
+        </div>
+      </div>
+  
+      <!-- Course Fee Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Fee</h3>
+        <div class="content">
+          <p>$400 (Discounted price available)</p>
+        </div>
+      </div>
+  
+      <!-- Instructor Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Instructor</h3>
+        <div class="content">
+          <p>Instructor: The course will be conducted by Sagar Ali, a skilled backend developer with extensive expertise in building robust and efficient server-side solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <section class="container">
+    <!-- Left Side: Course Details -->
+    <div class="course-details">
+      <h2>Graphic Design</h2>
+      <p>Explore the world of visual design with our comprehensive Graphic Design course. Learn to create stunning designs using tools like Adobe Photoshop, Illustrator, and Figma. From branding to web design, we cover it all.</p>
+      <ul>
+        <li>Adobe Photoshop & Illustrator</li>
+        <li>UI/UX Design Principles</li>
+        <li>Branding and Logo Design</li>
+        <li>Web & Mobile Design</li>
+      </ul>
+      <div class="rating">
+        ⭐⭐⭐⭐⭐ (4.7/5 based on 200 reviews)
+      </div>
+      <div class="buttons">
+        <a href="https://www.youtube.com" class="view-tutorial" target="_blank">View Tutorial</a>
+        <a href="https://example.com/book-a-call" class="book-call" target="_blank">Book a Call</a>
+      </div>
+    </div>
+  
+    <!-- Right Side: Video Tutorial -->
+    <div class="course-video">
+      <iframe 
+        src="https://www.youtube.com/embed/your-video-id" 
+        title="Graphic Design Tutorial"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  <section class="course-info">
+    <div class="container">
+      <!-- Course Benefits Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Benefits</h3>
+        <div class="content">
+          <ul>
+            <li>Creative Skills Development: Enhance your ability to create visually appealing designs.            </li>
+            <li>Industry-Relevant Tools: Master industry-standard tools like Adobe Photoshop, Illustrator, and Canva.</li>
+            <li>Freelancing Opportunities: Unlock opportunities to work as a freelance designer or join design teams.</li>
+            <li>Visual Communication: Learn how to convey ideas effectively through visuals for branding, marketing, and more.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Key Points Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Key Points</h3>
+        <div class="content">
+          <ul>
+            <li>Design Principles: Understand color theory, typography, and layout.</li>
+            <li>Software Proficiency: Gain hands-on experience with leading graphic design tools.</li>
+            <li>Portfolio Creation: Build a portfolio with real-world design projects.</li>
+            <li>Job Readiness: Equip yourself with skills that are in high demand in industries like advertising and digital media.            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Course Duration Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Duration</h3>
+        <div class="content">
+          <p>6 weeks (2 hours per week)</p>
+        </div>
+      </div>
+  
+      <!-- Course Fee Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Fee</h3>
+        <div class="content">
+          <p>$200 (Discounted price available)</p>
+        </div>
+      </div>
+  
+      <!-- Instructor Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Instructor</h3>
+        <div class="content">
+          <p>Instructor: The course will be led by Salar Heyder, an expert in graphic design with a proven track record of creative excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <!-- Left Side: Course Details -->
+    <div class="course-details">
+      <h2>Digital Marketing</h2>
+      <p>Learn how to harness the power of digital platforms to drive growth and visibility for brands. This course covers SEO, social media marketing, content creation, and email marketing.</p>
+      <ul>
+        <li>SEO (Search Engine Optimization)</li>
+        <li>Social Media Marketing</li>
+        <li>Content Creation & Strategy</li>
+        <li>Email Marketing Campaigns</li>
+      </ul>
+      <div class="rating">
+        ⭐⭐⭐⭐⭐ (4.8/5 based on 180 reviews)
+      </div>
+      <div class="buttons">
+        <a href="https://www.youtube.com" class="view-tutorial" target="_blank">View Tutorial</a>
+        <a href="https://example.com/book-a-call" class="book-call" target="_blank">Book a Call</a>
+      </div>
+    </div>
+  
+    <!-- Right Side: Video Tutorial -->
+    <div class="course-video">
+      <iframe 
+        src="https://www.youtube.com/embed/your-video-id" 
+        title="Digital Marketing Tutorial"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <section class="course-info">
+    <div class="container">
+      <!-- Course Benefits Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Benefits</h3>
+        <div class="content">
+          <ul>
+            <li>Career Growth: Opens roles in SEO, social media, and content marketing.</li>
+            <li>Business Growth: Boosts online visibility and sales.</li>
+            <li>Stay Updated: Learn the latest digital trends.</li>
+            <li>Analytics Skills: Track and measure campaign success.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Key Points Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Key Points</h3>
+        <div class="content">
+          <ul>
+            <li>SEO: Improve website ranking.            </li>
+            <li>Social Media: Promote brands on platforms like Instagram.</li>
+            <li>Email Marketing: Create effective email campaigns.</li>
+            <li>Paid Ads: Master Google and Facebook ads.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Course Duration Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Duration</h3>
+        <div class="content">
+          <p>6 weeks (5 hours per week)</p>
+        </div>
+      </div>
+  
+      <!-- Course Fee Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Fee</h3>
+        <div class="content">
+          <p>$250 (Discounted price available)</p>
+        </div>
+      </div>
+  
+      <!-- Instructor Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Instructor</h3>
+        <div class="content">
+          <p>Instructor: The course will be taught by M. Shahzaib, a skilled digital marketing professional with extensive industry experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <section class="container">
+    <!-- Left Side: Course Details -->
+    <div class="course-details">
+      <h2>Social Media Marketing</h2>
+      <p>Unlock the power of social media to build brands and engage with customers. Learn how to run successful campaigns on platforms like Facebook, Instagram, LinkedIn, and Twitter.</p>
+      <ul>
+        <li>Social Media Strategy</li>
+        <li>Facebook, Instagram, and LinkedIn Ads</li>
+        <li>Content Creation & Management</li>
+        <li>Community Engagement</li>
+      </ul>
+      <div class="rating">
+        ⭐⭐⭐⭐⭐ (4.9/5 based on 220 reviews)
+      </div>
+      <div class="buttons">
+        <a href="https://www.youtube.com" class="view-tutorial" target="_blank">View Tutorial</a>
+        <a href="https://example.com/book-a-call" class="book-call" target="_blank">Book a Call</a>
+      </div>
+    </div>
+  
+    <!-- Right Side: Video Tutorial -->
+    <div class="course-video">
+      <iframe 
+        src="https://www.youtube.com/embed/your-video-id" 
+        title="Social Media Marketing Tutorial"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  <section class="course-info">
+    <div class="container">
+      <!-- Course Benefits Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Benefits</h3>
+        <div class="content">
+          <ul>
+            <li>Brand Awareness: Learn to grow a brand's presence online.</li>
+            <li>Audience Engagement: Build strong customer relationships.</li>
+            <li>Sales Growth: Drive traffic and boost conversions.</li>
+            <li>High Demand Skills: Gain expertise in a booming field.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Key Points Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Key Points</h3>
+        <div class="content">
+          <ul>
+            <li>Platform Mastery: Understand Facebook, Instagram, and LinkedIn strategies.</li>
+            <li>Content Creation: Design engaging posts and stories.</li>
+            <li>Analytics: Learn to track and improve campaign performance.</li>
+            <li>Paid Advertising: Run cost-effective ad campaigns.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Course Duration Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Duration</h3>
+        <div class="content">
+          <p>5 weeks (2 hours per week)</p>
+        </div>
+      </div>
+  
+      <!-- Course Fee Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Course Fee</h3>
+        <div class="content">
+          <p>$150 (Discounted price available)</p>
+        </div>
+      </div>
+  
+      <!-- Instructor Section -->
+      <div class="course-info-item" onclick="toggleContent(this)">
+        <h3>Instructor</h3>
+        <div class="content">
+          <p>Instructor: The course will be led by M. Ismail, an experienced social media marketing expert with a proven track record of successful campaigns.          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- Footer Links -->
+ <div style="flex: 1; min-width: 250px; margin-bottom: 20px; text-align: center;">
+    <h3 style="margin-bottom: 15px; font-size: 18px;">Quick Links</h3>
+    <div>
+        <a href="#home" style="color: #000000; margin: 0 10px; text-decoration: none; font-size: 14px;">Home</a>
+        <a href="#about" style="color: #000000; margin: 0 10px; text-decoration: none; font-size: 14px;">About Us</a>
+        <a href="#services" style="color: #000000; margin: 0 10px; text-decoration: none; font-size: 14px;">Services</a>
+        <a href="#contact" style="color: #000000; margin: 0 10px; text-decoration: none; font-size: 14px;">Contact</a>
+    </div>
+</div>
+
+<!-- Social Media Links -->
+<div style="flex: 1; min-width: 250px; margin-bottom: 20px; text-align: right;">
+    <h3 style="margin-bottom: 15px; font-size: 18px;">Follow Us</h3>
+    <div style="display: flex; justify-content: flex-end; gap: 10px;">
+        <a href="https://www.facebook.com/profile.php?id=61557957804567&mibextid=JRoKGi" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="Facebook" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://wa.link/mho3hm" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+        </a>
+        <a href="https://www.instagram.com/un.known_486/profilecard/?igsh=cjVjZzVudmhmem1k" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram" style="width: 30px; height: 30px;">
+        </a>
+    </div>
+</div>
+</div>
+
+<!-- Footer Bottom -->
+<div style="border-top: 1px solid #444; margin-top: 20px; padding-top: 10px; font-size: 12px; color: #aaa;">
+<p style="font-family: 'Montserrat', sans-serif;">&copy; 2024 Your Company Name. All Rights Reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>
